@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://code.jquery.com/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <script href="js/bootstrap.js"></script>
 
   <script>
 
@@ -54,13 +54,23 @@
     }
 
   </script>
+
+<style>
+  body {
+  background-image: url("images/bg.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
 </head>
 
 <body>
 
   <div class="container">
 
-    <h3>Generate (Fake) South-African ID Numbers</h1>
+    <h3>Generate (Fake) South African ID Numbers</h1>
 
     <div class="row">
       <div class="col-xs-12">
@@ -103,23 +113,16 @@
             <label for="resident">Resident</label>
           </div>
         </div>
-
-        <input class="btn btn-primary" type="submit" />
+        <br><br>
+        <input class="btn btn-primary" id="btn1" type="submit" />
 
       </form>
-
+<br><br>
       <h3>Result</h3>
 
       <div id="result">Hint: submit the form to get an ID number.</div>
 
-        <h3>More Information</h3>
 
-        <p>See <a href="https://en.wikipedia.org/wiki/National_identification_number#South_Africa">Wikipedia</a> or
-          <a href="http://knowles.co.za/generating-south-african-id-numbers/">this article</a>.
-        </p>
-        <p>
-          Read <a href="https://github.com/Chris927/generate-sa-idnumbers">the code</a>.
-        </p>
 
     </div>
   </div>
